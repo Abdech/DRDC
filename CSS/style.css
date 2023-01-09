@@ -1,0 +1,557 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Edu+VIC+WA+NT+Beginner&family=Pacifico&family=Righteous&family=Roboto:wght@100;400&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous';
+}
+:root{
+    --primary:  #08156b;
+    --secondary: #0B1340;
+    --highlight:  #8B8C8B;
+    --main:  #10241B;
+    --support: #0D0D0D;
+    --fottext: Edu VIC WA NT Beginner;
+    --subtext: Edu QLD Beginner;
+    --tough: Pacifico;
+}
+p{
+    font-family: "Righteous";
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+    line-height: 1.6rem;
+    font-size: 16px;
+    font-family: 'Robato';
+}
+h3{
+    color: var(--primary);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    align-items: center;
+}
+.logo{
+    width: 16rem;
+}
+.logo img{
+    width: 100%;
+}
+.links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.links a{
+    text-decoration: none;
+    margin-right: 1.5rem;
+    color: var(--main);
+    letter-spacing: 1.9px;
+    transition: all 3s;
+    font-family: var(--tough);
+}
+.links a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+}
+.links a.active{
+    background-color: #f4f4f4;
+    padding: 3px 19px;
+    border-radius: 18px;
+    border: 1px solid #ff000080;
+}
+.burger>div {
+    width: 28px;
+    height: 4px;
+    background-color: var(--primary);
+    margin: 5px;
+    transition: all .3s ease;
+}
+p{
+    text-justify: distribute;
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+}
+
+img{
+    width: 100%;
+}
+.hero{
+    background-image: url('../IMAGES/hero.JPG');
+    background-position: center;
+    background-size: cover;
+    padding: 3rem;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+.welcome{
+    margin: 0 50% 0 0 ;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #f4f4f499;
+    font-family: "Roboto";
+}
+.welcome h1{
+    font-size: 1.9rem;
+    line-height: 1.9rem;
+    color: var(--primary);
+    font-family: var(--tough);
+    font-weight: 100;
+}
+.welcome h5{
+    font-family: var(--subtext);
+}
+.btn-contact{
+    padding: 1rem 1.5rem;
+    border: none;
+    color: #ffffff;
+    background: var(--primary);
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+.btn-contact a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.wel-head{
+    color: var(--primary);
+    text-shadow: rgb(238, 240, 243) 0px 3px 3px;
+    display: inline-block;
+    margin: 10px 0;
+}
+.welcome p{
+    font-size: 1.3rem;
+    width: 70%;
+    padding: 1.3rem 0;
+    font-family: var(--fottext);
+    text-shadow: #ffffff 0px 3px 3px;
+    font-weight: bold;
+}
+
+.details{
+    background-color: #f4f4f490;
+    padding: 3rem;
+    margin: 1.4rem;
+
+}
+.detail ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.detail ul li{
+    background-color: #08156b;
+    padding: 1px 1px;
+    margin: 1rem;
+    text-align: center;
+    list-style: none;
+    /* color: var(--primary); */
+    color: white;
+}
+
+.detail ul li img{
+    width: 100%;
+}
+.detail-img{
+    background-color: #f4f4f4;
+    padding: 3rem 1rem;
+    margin: 3rem;
+}
+.attribute{
+    display: flex;
+    padding: 3rem;
+    /* flex-direction: column; */
+}
+.attribute > section{
+    padding: 1.3rem;
+}
+.attribute h3{
+    text-align: right;
+    font-family: var(--fottext);
+}
+
+.quotes{
+    font-size: 1.9rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.program{
+    height: 100vh;
+}
+.purpose{
+    padding: 4rem;
+    /* border: 1px solid #010626; */
+    font-family: "Righteous";
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.key{
+    padding: 1rem;
+    border: 1px solid #f4f4f4;
+    margin: 1rem 0;
+    transition: all 1.8s ease;
+}
+.vision{
+    background: #f4f4f430;
+}
+.mandates{
+    padding: 1rem;
+}
+.vision:hover, .mission:hover, .mandate:hover{
+    background-color: #01062610;
+    transform: rotateY(350deg);
+}   
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 1.3rem;
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(65, 53, 65);
+    width: 100%;
+    color: white;
+}
+
+
+/* PROGRAMS */
+.program{
+    background: url('../IMAGES/IMG-20220814-WA0007.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading-h3{
+    color: #fff;
+    position: absolute;
+    top: 10rem;
+    text-shadow: var(--primary) 0px 3px 3px;
+}
+.upcoming{
+    background-color: #f4f4f490;
+    padding: 4rem;
+    border-radius: 10px 100px 0 10px;
+    width: 50%;
+}
+
+.upcoming li{
+        list-style: none;
+        padding: 10px;
+}
+
+
+
+/* CONTACT */
+.contact{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    height: 100vh;
+    /* color: #ffffff99; */
+}
+.contact-section h3{
+    font-size: 1.9rem;
+    padding: 1.9rem 0;
+    color: var(--primary);
+    text-shadow: #f4f4f4 1px 1px 1px;
+}
+.contact-heading{
+    text-shadow: #f4f4f4 0px 3px 3px;
+    font-size: 1.3rem;
+
+}
+.contact-section{
+    margin: 1rem 5rem;
+    max-width: 70%;
+    padding:  3rem;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    border: 1px solid #01062610;
+    transition: all 5s ease;
+    
+}
+.contact-section:hover{
+    padding: 10rem;
+    background-color: #08156b10;
+
+}
+address{
+    padding: 1rem 0 ;
+    font-size: 1.3rem;
+}
+
+
+
+/* ABOUT US */
+.light-bg{
+    
+    background-color: var(--primary);
+    color:rgb(238, 240, 243);
+    margin: 1rem 10rem;
+    padding: 4rem;
+    /* border: 1px solid white; */
+    max-width: 70%;
+    z-index: 1;
+    line-height: 1;
+    transition: all 5s;
+}
+.light-bg:hover{
+    border-radius: 1rem 1rem;
+    border: 3px solid white;
+}
+.light-bg h3{
+    margin-bottom: 1.3rem;
+    font-size: 1.9rem;
+    color: white;
+    text-align: center;
+
+}
+.light-bg p{
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.about{
+    /* height: 100vh; */
+    border: 1px solid var(--primary);
+    /* background-image: url('../IMAGES/two-cows.jpg'); */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.collaboration{
+    padding: 1.9rem 4rem;
+}
+.collaboration h3{
+    padding: 1rem 0;
+}
+.collaboration li{
+    list-style: none;
+}
+.collaboration a{
+    color: var(--primary);
+}
+
+
+/* GALLARY  */
+.gallary{
+    padding: 4rem;
+}
+
+.gallary-cards h4{
+    text-align: center;
+}
+/* .infrastructure, .equiptments{
+    display: flex;
+} */
+.gallary-cards ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    background-color: #f4f4f4;
+}
+.gallary-cards li{
+    background-color: #fff;
+    padding: .5rem .5rem 1rem;
+    margin: 1rem;
+    list-style: none;
+    color: var(--primary)   ;
+    border: 1px solid rgb(198, 233, 198, 30);
+    align-items: center;
+    
+
+}
+.gallary-cards ul img{
+    width: 100%;
+}
+/* .card img{
+    position: relative;
+}
+.card p{
+    position: absolute;
+} */
+.main, .card{
+    display: flex;
+    flex-direction: column;
+
+}
+.top{
+    position:fixed ;
+    bottom: 100px;
+    left: 1px;
+    width: 30px;
+    height: 30px;
+    background-color: #08156b;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.top a{
+    color: white;
+}
+
+@media  screen and (max-width: 940px) {
+    body{
+        overflow-x: hidden;
+    }
+    .welcome {
+            margin: 0 0 0 0;
+            padding: 1.5rem;
+            border-radius: 10px;
+    
+        }
+    .burger{
+        display: block;
+    }
+
+  .links {
+      position: fixed;
+      right: 0;
+      height: 87vh;
+      bottom:0;
+      background-color: #08156b;
+      opacity: 0.9;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+      z-index: 10;
+  }
+  .links a{
+    color: white;
+  }
+  a.active{
+    color: var(--primary);
+  }
+  .mobile-nav{
+    transform: translateX(0%);
+  }
+ .attribute, .details{
+    display: flex;
+    flex-direction: column;
+  }
+  @keyframes navLinkFade {
+      from {
+          opacity: 0;
+          transform: translateX(-500px);
+      }
+
+      to {
+          opacity: 1;
+          transform: translateX(0px);
+      }
+  }
+
+  .toggle .one {
+      transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .two {
+      opacity: 0;
+  }
+
+  .toggle .three {
+      transform: rotate(45deg) translate(-5px, -6px);
+  } 
+  
+
+}
+@media  screen and (max-width: 700px) {
+
+.welcome {
+        margin: 0 0 0 0;
+        padding: 1.5rem;
+        border-radius: 10px 100px 10px 0;
+        border: #ffffff25 solid 1px;
+        background-color: #f4f4f425;
+    }
+.welcome p {
+    width: 80%;
+    text-shadow: #ffffff 0px 3px 3px;
+    font-weight: bold;
+    /* font-style: italic; */
+
+}
+.hero{
+    padding: 1rem;
+}   
+
+/* ABOUT US */
+.light-bg {
+    margin: 1rem 3rem;
+    max-width: 99%;
+    padding: 2rem;
+}
+
+.light-bg h3 {
+    padding: .1rem 0 0 1rem;
+    font-size: 1.4rem;
+}
+
+
+
+/* CONTACT */
+.contact-section {
+    margin: 1rem 0;
+    max-width: 90%;
+}
+
+/* PROGRAM */
+.program {
+    padding: 0 1.5rem;
+
+}
+
+/* .heading-h3 {
+    color: #fff;
+    position: absolute;
+    top: 10rem;
+    text-shadow: var(--primary) 0px 3px 3px;
+} */
+
+.upcoming {
+    background-color: #f4f4f490;
+    padding: 1.9rem;
+    border-radius: 10px 100px 0 10px;
+    width: 70%;
+}
+
+
+}
+
+/* Tiny phones */
+@media  screen and (max-width: 400px) {
+
+.welcome {
+        margin: 0 0 0 0;
+        padding: 1rem;
+    }
+.welcome p {
+    width: 100%;
+}
+.light-bg {
+    margin: 1rem 1rem;
+}
+
+
+}
+
