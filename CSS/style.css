@@ -79,6 +79,7 @@ p{
 .burger {
     cursor: pointer;
     display: none;
+    z-index: 1000;
 }
 
 img{
@@ -139,12 +140,10 @@ img{
     text-shadow: #ffffff 0px 3px 3px;
     font-weight: bold;
 }
-
 .details{
     background-color: #f4f4f490;
     padding: 3rem;
     margin: 1.4rem;
-
 }
 .detail ul {
     display: grid;
@@ -159,7 +158,6 @@ img{
     /* color: var(--primary); */
     color: white;
 }
-
 .detail ul li img{
     width: 100%;
 }
@@ -539,8 +537,52 @@ address{
 }
 
 /* Tiny phones */
-@media  screen and (max-width: 400px) {
+@media  (max-width: 470px) {
+body{
+    width: 100%;
+}
 
+nav{
+    padding: 0 1rem;
+}
+.links {
+    height: 100%;
+}
+.logo{
+    width: 10rem;
+}
+.burger > div{
+    border: white solid .1px;
+}
+.hero{
+    background-position: right;
+    /* background-size: contain; */
+    /* background-origin: padding-box; */
+}
+.details{
+    padding: 10px 0;
+    margin: 1.4rem 0;
+    text-align: center;
+    background-color: #01062610;
+}
+.detail ul{
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.purpose{
+    padding: 1rem;
+    text-align: center;
+}
+.detail-img{
+    padding: 1rem;
+    margin: 1rem;
+}
+.attribute{
+    padding: 10px;
+}
+.links{
+    border: 1px solid white;
+    padding: 7rem;
+}
 .welcome {
         margin: 0 0 0 0;
         padding: 1rem;
