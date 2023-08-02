@@ -136,9 +136,18 @@ img{
     font-size: 1.3rem;
     width: 70%;
     padding: 1.3rem 0;
+    font-weight: bold;
     font-family: var(--fottext);
     text-shadow: #ffffff 0px 3px 3px;
+}
+.motto{
+    font-family: var(--fottext);
+    text-shadow: #ffffff 0px 3px 3px;
+    font-size: small;
     font-weight: bold;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: var(--primary);
 }
 .details{
     background-color: #f4f4f490;
