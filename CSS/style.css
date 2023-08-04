@@ -149,6 +149,15 @@ img{
     font-size: 1rem;
     color: var(--primary);
 }
+h1.motto{
+    font-family: var(--fottext);
+        text-shadow: #ffffff 0px 3px 3px;
+    text-align: center;
+        font-weight: bold;
+        margin-left: 10px;
+    font-size: xx-large;   
+        color: var(--primary);
+}
 .details{
     background-color: #f4f4f490;
     padding: 3rem;
