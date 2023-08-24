@@ -2,6 +2,7 @@ const links = document.querySelector('.links')
 const li = document.querySelectorAll('.links > li')
 const burger = document.querySelector('.burger')
 const divBur = document.querySelectorAll('.burger > div')
+const socials = document.querySelectorAll('.fa-brands')
 
 
 burger.addEventListener('click', () => {
@@ -26,4 +27,10 @@ burger.addEventListener('click', () => {
     //     })
     }
 
+})
+
+socials.forEach((social) => {
+     social.addEventListener('click', () => {
+        alert(`${social.id} is coming soon, stay tune`)
+    })
 })

@@ -102,7 +102,8 @@ img{
     padding: 1.5rem;
     border-radius: 10px;
     background-color: #f4f4f499;
-    font-family: "Roboto";
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 .welcome h1{
     font-size: 1.9rem;
@@ -112,7 +113,9 @@ img{
     font-weight: 100;
 }
 .welcome h5{
-    font-family: var(--subtext);
+    font-size: 1.6rem;
+    font-family: var(--fottext);
+    text-shadow: #ffffff 0px 1.9px 1.9px;
 }
 .btn-contact{
     padding: 1rem 1.5rem;
@@ -136,18 +139,21 @@ img{
     font-size: 1.3rem;
     width: 70%;
     padding: 1.3rem 0;
-    font-weight: bold;
-    font-family: var(--fottext);
+    /* font-weight: bold; */
+    font-family: 'Righteous' ;
     text-shadow: #ffffff 0px 3px 3px;
+    text-align: justify;
+    line-height: 1.5;
+    
 }
 .motto{
     font-family: var(--fottext);
-    text-shadow: #ffffff 0px 3px 3px;
+    text-shadow: #000 0px 1px 1px;
     font-size: small;
     font-weight: bold;
-    margin-left: 10px;
-    font-size: 1rem;
-    color: var(--primary);
+    /* margin-left: 10px; */
+    /* font-size: 1rem; */
+    color: rgb(255, 0, 0);
 }
 h1.motto{
     font-family: var(--fottext);
@@ -185,21 +191,25 @@ h1.motto{
     margin: 3rem;
 }
 .attribute{
-    display: flex;
-    padding: 3rem;
-    /* flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: justify;
 }
 .attribute > section{
     padding: 1.3rem;
 }
 .attribute h3{
-    text-align: right;
+    text-align: center;
     font-family: var(--fottext);
 }
 
 .quotes{
     font-size: 1.9rem;
     font-family: 'Courier New', Courier, monospace;
+}
+.quote p{
+    padding: 1rem;
+    font-family: var(--tough);
 }
 .program{
     height: 100vh;
@@ -211,11 +221,36 @@ h1.motto{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
+
 .key{
     padding: 1rem;
     border: 1px solid #f4f4f4;
     margin: 1rem 0;
     transition: all 1.8s ease;
+}
+.preamble{
+    padding: 7rem;
+    padding-bottom: 0;
+    border-bottom: 1px solid rgb(190, 190, 241);
+    background-color: #f4f4f4;
+    z-index: 1;
+}
+.preamble p{
+    text-align: justify;
+    line-height: 1.9rem;
+    color: var(--primary);
+    text-shadow: #fff 0px 1px 1px;
+}
+.objectives{
+    margin: 19px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid rgb(190, 190, 241) ;
+    border-bottom:3px solid #fff;
+    padding: 1.9rem;
+    /* padding-bottom: 0px; */
+    color: var(--primary);
+    text-shadow: #fff 1px 1px 1px ;
 }
 .vision{
     background: #f4f4f430;
@@ -311,6 +346,37 @@ address{
     padding: 1rem 0 ;
     font-size: 1.3rem;
 }
+.social{
+    font-size: xx-large;
+    cursor: pointer;
+}
+.fa-facebook{
+    color: #4267B2;
+    transition: all ease .51s;
+}
+.fa-instagram{
+    color: #C13584;
+    transition: all ease 1s;
+}
+.fa-whatsapp{
+    transition: all ease 1s;
+    color: #25D366;
+}
+.fa-facebook:hover{
+    font-size: 3rem;
+    color: gray;
+    transform: translateY(1px);
+}
+.fa-instagram:hover{
+    font-size: 3rem;
+    color: gray;
+    transform: translateY(1px);
+}
+.fa-whatsapp:hover{
+    font-size: 3rem;
+    color: gray;
+    transform: translateY(1px);
+}
 
 
 
@@ -397,6 +463,13 @@ address{
 }
 .gallary-cards ul img{
     width: 100%;
+    height: 100%;
+}
+.gallary-cards li p{
+    text-align: center;
+}
+#cross{
+    height: 65%;
 }
 /* .card img{
     position: relative;
@@ -409,19 +482,28 @@ address{
     flex-direction: column;
 
 }
+.card{
+    justify-content: space-between;
+}
 .top{
     position:fixed ;
     bottom: 100px;
-    left: 1px;
+    left: 19px;
     width: 30px;
     height: 30px;
-    background-color: #08156b;
-    color: white;
     cursor: pointer;
     border-radius: 50%;
+    border: 1px solid var(--primary);
 }
 .top a{
-    color: white;
+    color: black;
+}
+.top a i{
+    position: absolute;
+    left:  8px;
+    top: 7px;
+    color: var(--primary);
+
 }
 
 @media  screen and (max-width: 940px) {
@@ -452,6 +534,9 @@ address{
       transition: transform 0.5s ease-in;
       z-index: 10;
   }
+  .centre {
+      text-align: center;
+  }
   .links a{
     color: white;
   }
@@ -464,6 +549,13 @@ address{
  .attribute, .details{
     display: flex;
     flex-direction: column;
+
+
+
+
+
+
+
   }
   @keyframes navLinkFade {
       from {
@@ -499,6 +591,7 @@ address{
         border-radius: 10px 100px 10px 0;
         border: #ffffff25 solid 1px;
         background-color: #f4f4f425;
+        text-align: left;
     }
 .welcome p {
     width: 80%;
@@ -507,6 +600,14 @@ address{
     /* font-style: italic; */
 
 }
+.preamble{
+    padding: 1.6rem;
+    padding-bottom: 0px;
+}
+.objectives{
+    /* background-color: red; */
+}
+
 .hero{
     padding: 1rem;
 }   
@@ -550,7 +651,6 @@ address{
     border-radius: 10px 100px 0 10px;
     width: 70%;
 }
-
 
 }
 
