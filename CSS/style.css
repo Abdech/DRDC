@@ -66,7 +66,7 @@ nav{
 .links a.active{
     background-color: #f4f4f4;
     padding: 3px 19px;
-    border-radius: 18px;
+    border-radius: 8px;
     border: 1px solid #ff000080;
 }
 .burger>div {
@@ -364,7 +364,7 @@ footer{
     
 }
 .contact-section:hover{
-    padding: 10rem;
+    padding: 1rem;
     background-color: #08156b10;
 
 }
@@ -389,17 +389,14 @@ address{
     color: #25D366;
 }
 .fa-facebook:hover{
-    font-size: 3rem;
     color: gray;
     transform: translateY(1px);
 }
 .fa-instagram:hover{
-    font-size: 3rem;
     color: gray;
     transform: translateY(1px);
 }
 .fa-whatsapp:hover{
-    font-size: 3rem;
     color: gray;
     transform: translateY(1px);
 }
@@ -677,6 +674,7 @@ address{
 .contact-section {
     margin: 1rem 0;
     max-width: 90%;
+    padding: 1rem;
 }
 
 /* PROGRAM */
